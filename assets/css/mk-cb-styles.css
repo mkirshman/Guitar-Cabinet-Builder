@@ -1,0 +1,62 @@
+.mkbtn-container{
+   
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". ."; 
+  
+      }
+      .mk-cabinet-builder{
+          border: 1px solid rgb(130, 79, 222);
+          border-radius:10px;
+          max-width:768px;
+          margin:0 auto;
+          background:rgba(0,0,0,0);
+          color: rgb(130, 79, 222);
+      }
+      .mk-cabinet-builder{
+          border: 1px solid rgb(130, 79, 222);
+          border-radius:10px;
+          max-width:768px;
+          padding:30px;
+      }
+
+      .step, .sub-step{
+          display:none;
+      }
+  
+      .step.current, .sub-step.current {
+          display:block;
+      }
+  
+      .option{
+          min-height:150px;
+          text-align: center;
+      }
+  
+      button[class^=btn-]{
+          border: 1px solid rgb(130, 79, 222);
+          border-radius:10px;
+          margin: 10px 0;
+          padding:10px 5px;
+          background:rgba(0,0,0,0);
+          color: rgb(130, 79, 222);
+          min-width:100px;
+          cursor:pointer
+      }
+  
+      .disabled{
+          display:none;
+      }
+
+      .option{
+          display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+      }
+
+      .background-img{
+          width:100%;
+      }
